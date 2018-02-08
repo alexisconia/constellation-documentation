@@ -99,13 +99,13 @@ A l’inverse, un package comme HWMonitor qui utilise des API spécifiques à Wi
 
 Au démarrage d’un package, la sentinelle lancera des “Warnings” dans les logs Constellation si le package ne respecte pas le contrat de compatibilité sans toutefois bloquer le démarrage.
 
-Ces informations servent également pour la Console Constellation, afin de vous donner des informations lors de la ajout et configuration des packages de votre Constellation.
+Ces informations servent également pour la Console Constellation, afin de vous donner des informations lors de l'ajout et configuration des packages de votre Constellation.
 
 <h3>Informations sur les Settings du package</h3>
 
 Enfin, la troisième et dernière partie du manifeste sert à décrire les settings utilisés par un package.
 
-La déclaration des settings dans le manifeste n’a pas impact sur le fonctionnement du package mais il permet de décrire les clés de configuration utilisées par le package pour que des outils tel que la Console Constellation puisse proposer une interface graphique de configuration pour chaque package. Il est donc vivement recommandé de décrire les settings de ses packages. De plus il est possible de définir des valeurs par défaut dans le manifeste.
+La déclaration des settings dans le manifeste n’a pas d'impact sur le fonctionnement du package mais il permet de décrire les clés de configuration utilisées par le package pour que des outils tel que la Console Constellation puisse proposer une interface graphique de configuration pour chaque package. Il est donc vivement recommandé de décrire les settings de ses packages. De plus il est possible de définir des valeurs par défaut dans le manifeste.
 
 Chaque setting déclaré dans le manifeste doit obligatoirement comporter les attributs suivants  :
 
@@ -142,7 +142,7 @@ Par exemple :
 Sur chaque setting déclaré, vous pouvez également définir les attributs suivants :
 
 <ul>
-    <li>“<u>isRequiered</u>“ : indique si le setting est obligatoire ou non (par défaut “false”). Si le setting n’est pas déclaré, une erreur est levée.</li>
+    <li>“<u>isRequired</u>“ : indique si le setting est obligatoire ou non (par défaut “false”). Si le setting n’est pas déclaré, une erreur est levée.</li>
     <li>“<u>description</u>” : permettant de donner une explication sur le setting (affichée à l’utilisateur sur la Console Constellation)</li>
     <li>“<span style="text-decoration: underline;">defaultValue</span>” : la valeur par défaut du setting si le setting n’est pas déclaré (<a href="/client-api/net-package-api/settings/#Resolution_des_settings">plus d'info</a>)</li>
     <li>“<u>schemaXSD</u>” : indique le nom du fichier du schéma XSD (chemin relatif au package) que la valeur XML doit valider (seulement pour les settings de type XmlDocument ou ConfigurationSection)</li>
