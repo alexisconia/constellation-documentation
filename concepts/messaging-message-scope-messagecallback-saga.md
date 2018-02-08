@@ -44,9 +44,9 @@ Chaque package ou consommateur peut s’inscrire à un groupe ou être inscrit d
 <h3>MessageCallback</h3>
 Les messages dans Constellation servent essentiellement à invoquer des méthodes. On appelle cela des “MessageCallbacks” le fait de lier un message à une fonction de votre programme.
 
-Il s’agit tout simplement déclarer une méthode de votre code comme "MessageCallback", c’est à dire que si le package reçoit un message dont la clé du message est le nom d’une méthode déclarée comme MessageCallback, alors cette méthode sera invoquée. Le contenu du message reçu (c’est à dire les “Datas”)  contiendra les paramètres de la méthode.
+Il s’agit tout simplement de déclarer une méthode de votre code comme "MessageCallback", c’est à dire que si le package reçoit un message dont la clé du message est le nom d’une méthode déclarée comme MessageCallback, alors cette méthode sera invoquée. Le contenu du message reçu (c’est à dire les “Datas”)  contiendra les paramètres de la méthode.
 
-De la même façon, pour invoquer une méthode d’un autre package, il suffit d’envoyer un message dont la clé est la méthode à invoquer avec comme contenu de message les paramètres à passer à cette méthode.
+De la même façon, pour invoquer une méthode d’un autre package, il suffit d’envoyer un message dont la clé est la méthode à invoquer et le contenu est les paramètres à passer à cette méthode.
 <h3>Les Sagas</h3>
 Chaque message envoyé dans Constellation est à sens unique. Il n’y a aucun retour.
 
