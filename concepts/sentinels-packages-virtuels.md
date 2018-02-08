@@ -20,7 +20,7 @@ Seulement ce mécanisme n’est pas toujours possible. Si vous prenez un Arduino
 
 Autre exemple : un script Powershell. Le “programme” est dans le script lui-même. Il n’a pas de capacité de s’auto-programmer.
 
-C’est pour cela que Constellation apporte cette notion de “sentinelles et packages <strong>virtuels</strong>”. En effet, une sentinelle virtuelle n'existe pas dans le sens il n'y a pas de "sentinelle" capable de déployer un package. Cette notion existe seulement décrire l'identité du package "virtuel". Le package existe dans le sens où il fait partie de l'objet ou du script, mais il n'est ni stocké et ni déployé par la Constellation, il est "virtuel".
+C’est pour cela que Constellation apporte cette notion de “sentinelles et packages <strong>virtuels</strong>”. En effet, une sentinelle virtuelle n'existe pas dans le sens il n'y a pas de "sentinelle" capable de déployer un package. Cette notion existe seulement pour décrire l'identité du package "virtuel". Le package existe dans le sens où il fait partie de l'objet ou du script, mais il n'est ni stocké et ni déployé par la Constellation, il est "virtuel".
 
 Prenez l’exemple d’une sonde de température réalisée avec un Arduino/ESP8266 et connectée à Constellation.
 
